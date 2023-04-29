@@ -1,0 +1,54 @@
+body { background-color:#3a584c;}
+    
+h1{color: aliceblue;
+}
+
+
+#imagen{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 1500px;
+    background-size: cover;
+    
+  }
+
+#menu{color: aliceblue;
+}
+ 
+#img{height: 300px;
+} 
+
+#texto{ color:white;
+        padding: auto;
+    margin: 8%;
+}
+
+.clima-hoy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.lista-clima{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-items: center;
+    grid-gap: 1.5rem;
+    padding: 40px;
+}
+.dia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .lista-clima {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+  }
+#clima{ color: aliceblue;}
